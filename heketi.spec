@@ -37,7 +37,7 @@
 
 Name:           %{repo}
 Version:        9.0.0
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        RESTful based volume management framework for GlusterFS
 License:        LGPLv3+ and GPLv2
 URL:            https://%{provider_prefix}
@@ -408,6 +408,9 @@ getent passwd %{name} >/dev/null || useradd -r -g %{name} -d %{_sharedstatedir}/
 %endif
 
 %changelog
+* Sun Dec 13 2020 Thomas Buchinger <thomas.buchinger@outlook.com> - 9.0.0-6
+- Forked Source to my own repo (no modifications)
+
 * Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 9.0.0-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
 
