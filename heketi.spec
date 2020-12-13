@@ -36,7 +36,7 @@
 %global import_path     %{provider_prefix}
 
 Name:           %{repo}
-Version:        10.0.0
+Version:        10.1.0
 Release:        1%{?dist}
 Summary:        RESTful based volume management framework for GlusterFS
 License:        LGPLv3+ and GPLv2
@@ -408,7 +408,10 @@ getent passwd %{name} >/dev/null || useradd -r -g %{name} -d %{_sharedstatedir}/
 %endif
 
 %changelog
-* Sun Dec 13 2020 Thomas Buchinger <thomas.buchinger@outlook.com> - 9.0.0-6
+* Sun Dec 13 2020 Thomas Buchinger <thomas.buchinger@outlook.com> - 10.1.0-1
+- Update version to 10.1.0
+
+* Sun Dec 13 2020 Thomas Buchinger <thomas.buchinger@outlook.com> - 10.0.0-1
 - Update version to 10.0.0
 
 * Sun Dec 13 2020 Thomas Buchinger <thomas.buchinger@outlook.com> - 9.0.0-6
